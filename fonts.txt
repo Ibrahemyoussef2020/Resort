@@ -1,0 +1,39 @@
+ <header>
+        <div class="contact-info">
+            <div class="contact-info__right">
+                <ul>
+                    <li>
+                        <span>phone</span>
+                        <a>01147359396</a>
+                    </li>
+                    <li>
+                        <span>Onwaplace</span>
+                        <a>info@resortPlace.com</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact-info__left">
+                <ul>
+                    <li>
+                        <a href="#">facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">behance</a>
+                    </li>
+                    <li>
+                        <a href="#">behance</a>
+                    </li>
+                    <li>
+                        <a href="#">youtube</a>
+                    </li>
+                    <li>
+                        <a href="#">linkidIn</a>
+                    </li>
+                    <li>
+                        <a href="#">instegram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
