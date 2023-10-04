@@ -5,6 +5,11 @@
     height:var(--hero-height);
 }
 
+.hero li:not(.main-aside__heading , .contact-info__right li):hover {
+    transform: scale(.9);
+    color: #080;
+}
+
 /**************** layout *********************/
 .hero__layout{
     position: absolute;
@@ -244,7 +249,7 @@ header{
     font-weight: 600;
     color:var(--clr-light-100);
     background: var(--clr-primary);
-    border-radius: 5px;
+    border-radius:2px;
 }
 
 
@@ -315,6 +320,9 @@ header{
 /********************************** media **************/
 
 @media (min-width:767px){
+    .hero{
+        --hero-height:70vh
+    }
     .contact-info{
         padding-left: 1rem;
     }
@@ -334,10 +342,6 @@ header{
     }
 }
 @media (min-width:992px){
-   
-    .hero{
-        --hero-height:70vh
-    }
 
      /******** bottom *******/
 
@@ -365,13 +369,17 @@ header{
 }
 
 @media (min-width:1024px){
-
-    
-   
+    .hero{
+        --hero-height:100vh
+    }
 }
 
 @media (min-width:1200){
     .contact-info__right ul li{
         display: flex;
     }
+}
+
+.hero li{
+    transition: transform .3s linear;
 }
