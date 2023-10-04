@@ -14,9 +14,9 @@
     
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/framework.css">
+    <link rel="stylesheet" href="./css/global-style.css">
 
-    <link rel="stylesheet" href="./css/components/header-slider.css">
+    <link rel="stylesheet" href="./css/components/hero.css">
     <link rel="stylesheet" href="./css/components/about.css">
     <link rel="stylesheet" href="./css/components/data.css">
     <link rel="stylesheet" href="./css/components/features.css">
@@ -39,6 +39,189 @@
 </head>
 <body>
    
+<section class="hero">
+    <div class="hero__layout">
+    </div>
+    <header>
+        <div class="header__top contact-info container">
+            <div class="contact-info__right">
+                <ul>
+                    <li>
+                        <span>phone</span>
+                        <a>01147359396</a>
+                    </li>
+                    <li>
+                        <span>Onwaplace</span>
+                        <a>info@resortPlace.com</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact-info__left">
+                <ul>
+                    <li>
+                        <a href="#">facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">behance</a>
+                    </li>
+                    <li>
+                        <a href="#">youtube</a>
+                    </li>
+                    <li>
+                        <a href="#">linkidIn</a>
+                    </li>
+                    <li>
+                        <a href="#">instegram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header__bottom">
+            <div class="container header__bottom__container">
+                <div class="header__bottom__logo">
+                    <i class="fa-solid fa-house-user"></i>
+                    <span>Quarter</span>
+                </div>
+    
+                <nav class="header__bottom__links">
+                    <ul>
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#properties">Properties</a>
+                        </li>
+                        <li>
+                            <a href="#featuers">Featuers</a>
+                        </li>
+                        <li>
+                            <a href="#Blog">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#contacts">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+    
+                <div class="header__bottom__features">
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+    
+                    <button>
+                        <i class="fa-regular fa-user"></i>
+                    </button>
+    
+                    <button>
+                        ADD LISTING
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <article class="hero__intro">
+        <div class="hero__intro__entrance">
+            <i class="fa-solid fa-house-user"></i>
+            <span>Real Estate Agency</span>
+        </div>
+        <p class="hero__intro__desc">
+            Funcilities Width Comfort, Style & Lovely Space
+        </p>
+        <p class="hero__intro__lorem">
+            Lorem ipsum dolor sit amet consectetur
+        </p>
+        <button>
+            Make An Enquiry
+        </button>
+    </article>
+
+    <div class="slider">
+        <div class="slider__container">
+            <div class="slide slide__one">
+                <img src="./images/banner.webp" alt="banner">
+            </div>
+        </div>
+    </div>
+
+    <div class="slider__navigations">
+        <button class="left">
+            <i class="fa-solid fa-angles-left"></i>
+        </button>
+
+        <button class="right">
+            <i class="fa-solid fa-angles-right"></i>
+        </button>
+    </div>
+
+    <aside class="main-aside">
+        <button class="contacts-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="main-aside__soical">
+            <ul>
+                <li class="main-aside__heading">
+                    <span>Social Media</span>
+                </li>
+                <li>
+                    <a href="#">facebook</a>
+                </li>
+                <li>
+                    <a href="#">behance</a>
+                </li>
+                <li>
+                    <a href="#">behance</a>
+                </li>
+                <li>
+                    <a href="#">youtube</a>
+                </li>
+                <li>
+                    <a href="#">linkidIn</a>
+                </li>
+                <li>
+                    <a href="#">instegram</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main-aside__roots">
+            <ul>
+                <li class="main-aside__heading">
+                    <span>Move To</span>
+                </li>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#properties">Properties</a>
+                </li>
+                <li>
+                    <a href="#featuers">Featuers</a>
+                </li>
+                <li>
+                    <a href="#Blog">Blog</a>
+                </li>
+                <li>
+                    <a href="#contacts">Contacts</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+</section>
+
+<script>
+    const contactsBtn = document.querySelector('.contacts-btn'),
+        mainAside = document.querySelector('.main-aside');
+          
+          contactsBtn.addEventListener('click', e =>{
+            mainAside.classList.toggle('oppend')
+          })
+
+</script>
 
 </body>
 </html>
