@@ -1,6 +1,6 @@
 :root{
 
---fs-title:1.2rem;
+--fs-title:calc(1.2rem + 1vw);
 --fs-desc:1.10rem;
 
 --clr-primary:orange;

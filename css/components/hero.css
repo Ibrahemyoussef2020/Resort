@@ -213,6 +213,7 @@ header{
 
 .hero__intro{
     min-width:230px;
+    padding-bottom: 2rem;
     position: absolute;
     top:60%;
     left: 50%;
