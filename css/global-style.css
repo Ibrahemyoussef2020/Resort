@@ -1,6 +1,6 @@
 :root{
 
---fs-title:1.1rem;
+--fs-title:1.2rem;
 --fs-desc:1.12rem;
 
 --clr-primary:orange;
@@ -72,14 +72,14 @@ picture {
         --fs-title:calc(1.5rem + 1vw);
     }
     .container{
-        width: calc(100% - 100px);
+        width: calc(100% - 50px);
     }
 }
 
 @media (min-width:992px){
     
     .container{
-        width: calc(100% - 150px);
+        width: calc(100% - 100px);
     }
 }
 
@@ -89,7 +89,7 @@ picture {
         --fs-desc:1.8rem;
     }
     .container{
-        width: calc(100% - 300px);
+        width: calc(100% - 200px);
     }
 }
 
@@ -98,10 +98,13 @@ picture {
         --fs-title:calc(1.5rem + 2vw);
         --fs-desc:2rem;
     }
+    .container{
+        width: calc(100% - 250px);
+    }
 }
 
 @media (min-width:2000px){
     .container{
-        width: calc(100% - 400px);
+        width: calc(100% - 350px);
     }
 }

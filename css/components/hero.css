@@ -175,9 +175,9 @@ header{
 }
 
 .slider .slide img{
-    width:100%;
-    height: 100%;
-    min-height: var(--hero-height);
+    width: 100%;
+    height: var(--hero-height);
+    max-height: 100%;
 }
 
 
@@ -263,7 +263,7 @@ header{
     min-height:calc(var(--hero-height) - 50px);
     padding:1rem;
     background:var(--clr-light-50);
-    z-index:4;
+    z-index:15;
     background: var(--clr-primary);
     display: flex;
     flex-direction: column;
