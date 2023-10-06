@@ -1,6 +1,7 @@
 .features{
+    margin-top: 2rem;
     padding: 3rem .5rem;
-    background:var(--clr-light-15);
+    background:var(--clr-light-25);
 }
 
 .container--features{
@@ -26,7 +27,7 @@
     display: block;
     margin:2.9rem 0 .5rem;
     text-align: center;
-    font-size:3rem;
+    font-size:2rem;
     font-weight: 600;
     color: var(--clr-secondary);
 }
