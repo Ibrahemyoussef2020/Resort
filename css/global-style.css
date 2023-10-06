@@ -69,6 +69,18 @@ picture {
     margin-right: auto;
 }
 
+.left-container{
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: auto;
+}
+
+.right-container{
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: auto;
+}
+
 @media (min-width:767px){
     :root{
         --fs-title-primary:calc(1.5rem + 1vw);
@@ -76,12 +88,26 @@ picture {
     .container{
         width: calc(100% - 50px);
     }
+
+    .left-container{
+        margin-left: 25px;
+    }
+    .right-container{
+        margin-right: 25px;
+    }
 }
 
 @media (min-width:992px){
     
     .container{
         width: calc(100% - 70px);
+    }
+
+    .left-container{
+        margin-left: 35px;
+    }
+    .right-container{
+        margin-right: 35px;
     }
 }
 
@@ -93,6 +119,13 @@ picture {
     .container{
         width: calc(100% - 150px);
     }
+
+    .left-container{
+        margin-left: 75px;
+    }
+    .right-container{
+        margin-right: 75px;
+    }
 }
 
 @media (min-width:1600px){
@@ -103,10 +136,24 @@ picture {
     .container{
         width: calc(100% - 170px);
     }
+
+    .left-container{
+        margin-left: 85px;
+    }
+    .right-container{
+        margin-right: 85px;
+    }
 }
 
 @media (min-width:2000px){
     .container{
         width: calc(100% - 220px);
+    }
+
+    .left-container{
+        margin-left: 110px;
+    }
+    .right-container{
+        margin-right: 110px;
     }
 }
