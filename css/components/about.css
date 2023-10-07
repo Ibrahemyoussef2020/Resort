@@ -41,7 +41,6 @@
 
 
 /************************* about__info ***************/
-
 .about__info > * {
     height: 100%;
 }
@@ -51,7 +50,8 @@
     width:100%;
     min-width: 200px;
     max-width: 300px;
-    height:400px;
+    max-height: 450px;
+    height:100%;
     padding: 0.5em;
     flex: 1;
     text-align: center;
@@ -68,8 +68,8 @@
     height:calc(100% - 30px);
     width:70px;
     background:transparent;
-    border-top: 70px solid  var(--clr-secondary);
-    border-right: 140px solid  var(--clr-secondary);
+    border-top: 70px solid  var(--clr-primary);
+    border-right: 140px solid  var(--clr-primary);
     z-index:0;
     display: none;
 }
@@ -82,8 +82,8 @@
     height:calc(100% - 30px);
     width:70px;
     background:transparent;
-    border-bottom: 70px solid  var(--clr-secondary);
-    border-left: 40px solid  var(--clr-secondary);
+    border-bottom: 70px solid  var(--clr-primary);
+    border-left: 40px solid  var(--clr-primary);
     z-index:0;
     display: none;
 
@@ -129,7 +129,7 @@
 
 .about__img__years h3{
     margin-top: .5rem;
-    font-size:calc(var(--fs-desc) - 5px);
+    font-size:calc(var(--fs-desc-primary) - 5px);
 }
 
 .about__img__video{
@@ -163,13 +163,18 @@
 
 /********* about__text **********/
 .about__text {
+    height: 100%;
+    padding:2rem 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     color: var(--clr-secondary);
     flex: 1;
-    padding: 1rem;
 }
 
 .about__text p  , .about__text span{
-    font-size: calc(var(--fs-desc)  - 3px) !important;
+    font-size: calc(var(--fs-desc-primary)  - 3px) !important;
     line-height: 1.4rem;
 }
 
@@ -178,7 +183,7 @@
     padding: 5px 10px;
     margin: 0  0 1rem;
     border-radius: 10px;
-    font-size: var(--fs-desc);
+    font-size: var(--fs-desc-primary);
     color: var(--clr-primary);
     background:#ffa50069;
 }
@@ -193,7 +198,7 @@
 .about__features{
     display: flex;
     flex-wrap: wrap;
-    gap: .5rem;
+    gap: 1rem;
     margin-top: 1rem;
 }
 
@@ -243,38 +248,26 @@ align-items: center;
 
 @media (min-width:992px){
     .about__info{
+        height: 750px;
         display: flex;
         align-items: center;
         gap: 1rem; 
     }
 
-    
-    .about__text {
-        margin-top: 0;
-        padding: 0;
-    }
-
     .about__img{
-        min-width:400px;
-        height:650px;
+        max-width: unset;
+        max-height: unset;
     }
-    
 }
 
 @media (min-width:1400px) {
-    .about__img{
-        min-width: 600px;
-        height:1000px;
-    }
-
     .about__text p , .about__text span{
         line-height: 2rem;
     }
 }
 
-
-@media (min-width:2000px)  {
-    .about__img{
-        height:800px;
+@media (min-width:1600px){
+    .about__info{
+        height: 750px;
     }
 }

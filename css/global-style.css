@@ -2,7 +2,8 @@
 
 --fs-title-primary:calc(1.2rem + 1vw);
 --fs-title-secondary:1.5rem;
---fs-desc:1.10rem;
+--fs-desc-primary:1.25rem;
+--fs-desc-secondary:1.12rem;
 
 --clr-primary:orange;
 --clr-secondary:#24333a;
@@ -23,7 +24,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    font-size: var(--fs-desc);
+    font-size: var(--fs-desc-primary);
     overflow-x: hidden;
 }
 
@@ -82,13 +83,6 @@ picture {
 }
 
 @media (min-width:767px){
-    :root{
-        --fs-title-primary:calc(1.5rem + 1vw);
-    }
-    .container{
-        width: calc(100% - 50px);
-    }
-
     .left-container{
         margin-left: 25px;
     }
@@ -100,24 +94,20 @@ picture {
 @media (min-width:992px){
     
     .container{
-        width: calc(100% - 70px);
+        width: calc(100% - 50px);
     }
 
     .left-container{
-        margin-left: 35px;
+        margin-left: 50px;
     }
     .right-container{
-        margin-right: 35px;
+        margin-right: 50px;
     }
 }
 
 @media (min-width:1400px){
-    :root{
-        --fs-title-primary:calc(1.7rem + 1vw);
-        --fs-desc:1.5rem;
-    }
     .container{
-        width: calc(100% - 150px);
+        width: calc(100% - 100px);
     }
 
     .left-container{
@@ -130,30 +120,44 @@ picture {
 
 @media (min-width:1600px){
     :root{
-        --fs-title-primary:calc(1.5rem + 2vw);
-        --fs-desc:1.7rem;
+        --fs-title-primary:calc(1.6rem + 1vw);
+        --fs-desc-primary:1.5rem;
+        --fs-desc-secondary:1.25rem;
     }
     .container{
-        width: calc(100% - 170px);
+        width: calc(100% - 150px);
     }
 
     .left-container{
-        margin-left: 85px;
+        margin-left:75px;
     }
     .right-container{
-        margin-right: 85px;
+        margin-right:75px;
+    }
+}
+
+@media (min-width:1800px){
+    .container{
+        width: calc(100% - 200px);
+    }
+
+    .left-container{
+        margin-left: 100px;
+    }
+    .right-container{
+        margin-right: 100px;
     }
 }
 
 @media (min-width:2000px){
     .container{
-        width: calc(100% - 220px);
+        width: calc(100% - 250px);
     }
 
     .left-container{
-        margin-left: 110px;
+        margin-left: 125px;
     }
     .right-container{
-        margin-right: 110px;
+        margin-right: 125px;
     }
 }

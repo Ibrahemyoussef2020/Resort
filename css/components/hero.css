@@ -209,13 +209,14 @@ header{
     border-radius: 1rem 0 0 1rem;
 }
 .slider__navigations button i {
-    font-size: var(--fs-desc);
+    font-size: var(--fs-desc-primary);
 }
 
 /**************************** hero__intro *************/
 
 .hero__intro{
     min-width:230px;
+    max-width:600px;
     padding-bottom: 2rem;
     position: absolute;
     top:60%;
@@ -227,7 +228,7 @@ header{
 }
 
 .hero__intro__entrance{
-    margin: 4rem 0 1rem 1rem;
+    margin: 4rem 0 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,7 +242,7 @@ header{
 }
 
 .hero__intro__desc{
-    font-size:1.3rem;
+    font-size:1.2rem;
     font-weight:600;
     line-height:1.5;
     margin-bottom:1rem;
@@ -341,11 +342,17 @@ header{
     }
 
     .hero__intro{
-        min-width: 450px;
+        width: 80%;
+        min-width: 550px;
     }
 
     .hero__intro__desc{
-        font-size: var(--fs-title-primary);
+        font-size: calc(var(--fs-title-primary) + 1vw);
+        margin-bottom:2rem;
+    }
+
+    .hero__intro__lorem{
+        margin-bottom: 1rem;
     }
 
     /******* bottom ********/
@@ -387,12 +394,59 @@ header{
     }
 }
 
-@media (min-width:1200){
+@media (min-width:1200px){
+
     .contact-info__right ul li{
         display: flex;
+    }
+
+    .hero__intro{
+        max-width:650px;
+    }
+
+    .hero__intro__desc{
+        font-size: calc(var(--fs-title-primary) + 1rem);
+    }
+
+    .hero__intro button{
+        margin-top: 2rem;
+        padding:1.5rem 2rem;
+        border-radius: .5rem;
+    }
+
+    .slider__navigations button:first-child {
+        border-radius: 0 2rem 2rem 0;
+    }
+
+    .slider__navigations button:last-child {
+        border-radius: 2rem 0 0 2rem;
+    }
+
+    .slider__navigations button i{
+        font-size: 2.2rem;
+    }
+}
+
+@media (min-width:1400px){
+    .hero__intro{
+        max-width:800px;
+    }
+}
+
+
+@media (min-width:1600px){
+
+    .hero__intro *:not(.hero__intro__desc){
+        font-size:2rem;
     }
 }
 
 .hero li{
     transition: transform .3s linear;
+}
+
+@media (min-width:2000px){
+    .hero__intro{
+        max-width:950px;
+    }
 }
