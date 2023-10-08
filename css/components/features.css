@@ -37,7 +37,7 @@
 
 .features i {
     font-size: 4rem;
-    color: var(--clr-primary);
+    color:#ffa500ab;
 }
 
 .features span{

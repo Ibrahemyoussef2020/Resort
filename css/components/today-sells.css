@@ -75,6 +75,7 @@
 }
 
 .text__properties__parts > div {
+    max-width: fit-content;
     padding: 2rem 0;
     font-size: var(--fs-desc-primary);
     flex: 1;
@@ -103,7 +104,7 @@
 
 .text__images img{
     flex: 1;
-    max-height:100px;
+    max-height:150px;
     max-width: 150px;
 }
 
@@ -215,14 +216,11 @@
         justify-content: flex-start;
     }
 
-    .text__properties__parts > div{
-        min-width: 100px;
-    }
 }
 
 @media (min-width:1200px){
     .today-sells__image{
-        min-height:calc(650px + 2vw);
+        min-height:calc(700px + 2vw);
     }
 }
 
@@ -238,7 +236,7 @@
 @media (min-width:1600px){
 
     .today-sells__image{
-        min-height: calc(650px + 4vw);
+        min-height: calc(700px + 4vw);
     }
 
     .today-sells__text{
