@@ -31,6 +31,7 @@
 .featured-listing{
     flex: 1;
     min-width: 340px; 
+    max-width: 600px;
     outline: 1rem solid var(--clr-light-25);
     background: var(--clr-light-100);
 }
