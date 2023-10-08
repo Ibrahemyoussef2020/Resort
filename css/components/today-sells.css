@@ -99,7 +99,7 @@
 .text__images{
     padding: 1rem 0;
     display: flex;
-    gap: .5rem;
+    gap: 5px;
 }
 
 .text__images img{
@@ -201,6 +201,12 @@
 
 
 /********** media ************/
+
+@media (min-width:767px){
+    .text__images {
+        gap: 1rem;
+    }
+}
 
 @media (min-width:992px){
     .today-sells__left-container{
