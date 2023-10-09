@@ -12,8 +12,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    bottom: calc(100px);
-    height:calc(100% + 100px);
+    bottom:100px;
+    height:100%;
     width: 100%;
     background: rgb(36 51 58 / 60%);
     z-index: 2;
@@ -34,6 +34,10 @@
     font-weight: 500;
     color: var(--clr-light-100);
     text-align: center;
+}
+
+.buildings-amenities__padding{
+    min-height:400px;
 }
 
 .buildings-amenities__costum-container{
@@ -106,7 +110,7 @@
 
 .container--images{
     position: relative;
-    top:calc(100% - 130px);
+    top: 50px;
     left: 50%;
     width: 100%;
     transform: translateX(-50%);
@@ -117,8 +121,8 @@
     min-width: 100%;
     max-width: 100%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -127,7 +131,6 @@
     flex: 1;
     width: 100%;
     min-width:270px;
-    max-width: 400px;
     aspect-ratio: 1 / 1;
     -webkit-aspect-ratio: 1 / 1;
     -moz-aspect-ratio: 1 / 1;
@@ -186,13 +189,14 @@
 /********** media ***********/
 
 @media (min-width:552px){
+
+    .buildings-amenities__padding{
+        min-height: 500px;
+    }
+
     .buildings-amenities__costum-container{
         max-width:calc(200px * 2 + 1rem);
         min-width:calc(200px * 2 + 1rem);
-    }
-
-    .container--images{
-        position: absolute;
     }
 
     .buildings-amenities__slider {
@@ -256,6 +260,10 @@
 
     .buildings-amenities__costum-container{
         max-width:calc(200px * 3 + 2rem);
+    }
+
+    .container--images{
+        top: 100px;
     }
 
     .container--slider{
