@@ -1,9 +1,9 @@
 :root{
 
---fs-title-primary:calc(1.2rem + 1vw);
---fs-title-secondary:1.5rem;
---fs-desc-primary:1.25rem;
---fs-desc-secondary:1.12rem;
+--fs-title-primary:calc(1.1rem + 1vw);
+--fs-title-secondary:1.2rem;
+--fs-desc-primary:1.12rem;
+--fs-desc-secondary:1rem;
 
 --clr-primary:orange;
 --clr-primary-light:#ffa50038;
@@ -121,9 +121,9 @@ picture {
 
 @media (min-width:1600px){
     :root{
-        --fs-title-primary:calc(1.6rem + 1vw);
-        --fs-desc-primary:1.5rem;
-        --fs-desc-secondary:1.25rem;
+        --fs-title-primary:calc(1.3rem + 1vw);
+        --fs-desc-primary:1.25rem;
+        --fs-desc-secondary:1.12rem;
     }
     .container{
         width: calc(100% - 150px);
@@ -151,6 +151,11 @@ picture {
 }
 
 @media (min-width:2000px){
+    :root{
+        --fs-title-primary:calc(1.5rem + 1vw);
+        --fs-desc-primary:1.50rem;
+        --fs-desc-secondary:1.25rem;
+    }
     .container{
         width: calc(100% - 250px);
     }
