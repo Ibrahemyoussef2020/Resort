@@ -105,7 +105,7 @@
 /*********************************** images **********/
 
 .container--images{
-    position: absolute;
+    position: relative;
     top:calc(100% - 130px);
     left: 50%;
     width: 100%;
@@ -189,6 +189,10 @@
     .buildings-amenities__costum-container{
         max-width:calc(200px * 2 + 1rem);
         min-width:calc(200px * 2 + 1rem);
+    }
+
+    .container--images{
+        position: absolute;
     }
 
     .buildings-amenities__slider {
