@@ -37,8 +37,8 @@
 }
 
 .buildings-amenities__costum-container{
-    min-width:200px;
-    max-width: 200px;
+    min-width:250px;
+    max-width:250px;
     margin: auto;
 }
 
@@ -60,9 +60,9 @@
 
 .buildings-amenities__slider{
     flex: 1;
-    min-width:300px;
-    max-width:300px;
-    height: 180px;
+    min-width:250px;
+    max-width:250px;
+    height: 150px;
 }
 
 .buildings-amenities__slider img{
@@ -74,8 +74,8 @@
 .buildings-amenities__navigations{
     position: absolute;
     top:50%;
-    left:-70px;
-    right:-70px;
+    left:-55px;
+    right:-55px;
     min-height: 100px;
     transform: translateY(-50%);
 
@@ -145,7 +145,7 @@
 
 .buildings-amenities__text{
     position: absolute;
-    bottom:2px;
+    bottom:0;
     left:0;
     width:100%;
     min-height: 70px;
@@ -188,6 +188,19 @@
 @media (min-width:552px){
     .buildings-amenities__costum-container{
         max-width:calc(200px * 2 + 1rem);
+        min-width:calc(200px * 2 + 1rem);
+    }
+
+    .buildings-amenities__slider {
+        flex: 1;
+        min-width: 200px;
+        max-width: 200px;
+        height: 130px;
+    }
+
+    .buildings-amenities__navigations{
+        left: -70px;
+        right: -70px;
     }
 
     .buildings-amenities__images{
@@ -202,6 +215,9 @@
         max-width: 33.4%;
     }
     
+    .buildings-amenities__text{
+        bottom: 2px;
+    }
 }
 
 @media (min-width:552px) and (max-width:766px){
@@ -213,13 +229,22 @@
     }
 
     .buildings-amenities__text__title{
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .buildings-amenities__text__desc{
         display: inline-block;
-        font-size: 14px;
-        margin-bottom: 2rem;
+        font-size: 13px;
+        margin-bottom: 1rem;
+    }
+
+    .buildings-amenities__text__plus{
+        height: 25px;
+        width: 25px;    
+    }
+
+    .buildings-amenities__text__plus i{
+        font-size: 1rem;
     }
 }
 
