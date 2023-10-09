@@ -214,6 +214,10 @@
         gap: 1rem;
     }
 
+    .today-sells__image{
+        min-height:calc(700px + 2vw);
+    }
+
     .today-sells__text{
         min-width: 500px;
     }
@@ -223,13 +227,6 @@
     }
 
 }
-
-@media (min-width:1200px){
-    .today-sells__image{
-        min-height:calc(700px + 2vw);
-    }
-}
-
 
 @media (min-width:1400px){
 

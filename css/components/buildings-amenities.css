@@ -1,0 +1,247 @@
+
+.buildings-amenities{
+    position: relative;
+    min-height:calc(600px + 2vw);
+    background: var(--clr-light-25);
+    background-image:url(../../images/building-bannar.jpg);
+    background-size: cover;
+    background-clip: content-box;
+}
+
+.buildings-amenities__layout{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: calc(100px);
+    height:calc(100% + 100px);
+    width: 100%;
+    background: rgb(36 51 58 / 60%);
+    z-index: 2;
+}
+
+.buildings-amenities__title {
+    margin: calc(4rem + 2vw) 0 1rem;
+    font-size: var(--fs-title-primary);
+    font-weight: 700;
+    color: var(--clr-light-100);
+    text-align: center;
+}
+
+
+.buildings-amenities__desc{
+    margin: 1rem 0 2rem;
+    padding-left: 0.5rem;
+    font-weight: 500;
+    color: var(--clr-light-100);
+    text-align: center;
+}
+
+.buildings-amenities__costum-container{
+    min-width:200px;
+    max-width: 200px;
+    margin: auto;
+}
+
+.buildings-amenities__sliders{
+    position: relative;
+}
+
+
+.buildings-amenities__sliders__track{
+    width: 100%;
+    overflow: hidden;
+}
+
+.buildings-amenities__sliders__thumb{
+    width:1000px;
+    display: flex;
+    gap:1rem;
+}
+
+.buildings-amenities__slider{
+    flex: 1;
+    min-width:300px;
+    max-width:300px;
+    height: 180px;
+}
+
+.buildings-amenities__slider img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.buildings-amenities__navigations{
+    position: absolute;
+    top:50%;
+    left:-70px;
+    right:-70px;
+    min-height: 100px;
+    transform: translateY(-50%);
+
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    z-index:1;
+}
+
+.buildings-amenities__navigation{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.buildings-amenities__navigation.left{
+    color: var(--clr-primary);
+    background: var(--clr-light-100);
+}
+
+.buildings-amenities__navigation.right{
+    color: var(--clr-light-100);
+    background: var(--clr-primary);
+}
+
+/*********************************** images **********/
+
+.container--images{
+    position: absolute;
+    top:calc(100% - 130px);
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.buildings-amenities__images{
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.buildings-amenities__image{
+    flex: 1;
+    width: 100%;
+    min-width:270px;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    -webkit-aspect-ratio: 1 / 1;
+    -moz-aspect-ratio: 1 / 1;
+    -o-aspect-ratio: 1 / 1;
+}
+
+.buildings-amenities__image img{
+    width:100%;
+    height:100%;
+}
+
+.buildings-amenities__image.relative{
+    position: relative;
+}
+
+.buildings-amenities__text{
+    position: absolute;
+    bottom:2px;
+    left:0;
+    width:100%;
+    min-height: 70px;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:1rem;
+    color: var(--clr-light-100);
+    background:rgba(0,0,0,0.8);
+}
+
+.buildings-amenities__text__title{
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+}
+
+.buildings-amenities__text__desc{
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+.buildings-amenities__text__plus{
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    background: var(--clr-primary);
+    border:none;
+    outline: none;
+}
+
+.buildings-amenities__text__plus i{
+    font-size: 1.3rem;
+    color: var(--clr-light-100);
+}
+
+
+/********** media ***********/
+
+@media (min-width:552px){
+    .buildings-amenities__costum-container{
+        max-width:calc(200px * 2 + 1rem);
+    }
+
+    .buildings-amenities__images{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .buildings-amenities__image{
+        min-width: unset;
+        max-width: 33.4%;
+    }
+    
+}
+
+@media (min-width:552px) and (max-width:766px){
+    .buildings-amenities__text{
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        background: rgba(0,0,0,0.6);
+    }
+
+    .buildings-amenities__text__title{
+        font-size: 14px;
+    }
+
+    .buildings-amenities__text__desc{
+        display: inline-block;
+        font-size: 14px;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width:767px){
+
+    .buildings-amenities__costum-container{
+        max-width:calc(200px * 3 + 2rem);
+    }
+
+    .container--slider{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50% ,-60%);
+    }
+
+    .buildings-amenities__images{
+        min-width: unset;
+    }
+}
+
+@media (min-width:992px){
+    .buildings-amenities__costum-container{
+        max-width:calc(200px * 4 + 3rem)
+    }
+}
