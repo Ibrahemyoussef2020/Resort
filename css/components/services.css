@@ -10,7 +10,7 @@
     text-align: center;
 }
 .services__desc{
-    margin: 1rem 0;
+    margin: 1rem 0 2rem;
     padding-left: 0.5rem;
     font-weight: 500;
     color: var(--clr-secondary);

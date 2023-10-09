@@ -37,8 +37,8 @@
 }
 
 .buildings-amenities__costum-container{
-    min-width:250px;
-    max-width:250px;
+    min-width:230px;
+    max-width:230px;
     margin: auto;
 }
 
@@ -60,9 +60,9 @@
 
 .buildings-amenities__slider{
     flex: 1;
-    min-width:250px;
-    max-width:250px;
-    height: 150px;
+    min-width:230px;
+    max-width:230px;
+    height: 180px;
 }
 
 .buildings-amenities__slider img{
@@ -74,8 +74,8 @@
 .buildings-amenities__navigations{
     position: absolute;
     top:50%;
-    left:-55px;
-    right:-55px;
+    left:-65px;
+    right:-65px;
     min-height: 100px;
     transform: translateY(-50%);
 
@@ -159,18 +159,18 @@
 }
 
 .buildings-amenities__text__title{
-    font-size: 1.1rem;
+    font-size: .75rem;
     margin-bottom: .5rem;
 }
 
 .buildings-amenities__text__desc{
-    font-size: 1rem;
+    font-size: .75rem;
     margin-bottom: .5rem;
 }
 
 .buildings-amenities__text__plus{
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     padding: 5px;
     background: var(--clr-primary);
     border:none;
@@ -178,7 +178,7 @@
 }
 
 .buildings-amenities__text__plus i{
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: var(--clr-light-100);
 }
 
@@ -195,7 +195,7 @@
         flex: 1;
         min-width: 200px;
         max-width: 200px;
-        height: 130px;
+        height: 150px;
     }
 
     .buildings-amenities__navigations{

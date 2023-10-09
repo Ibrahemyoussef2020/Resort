@@ -209,6 +209,11 @@
 }
 
 @media (min-width:992px){
+
+    .today-sells {
+        padding: 6rem 0 4rem;
+    }
+
     .today-sells__left-container{
         flex-direction: row;
         gap: 1rem;
