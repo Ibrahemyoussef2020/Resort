@@ -120,6 +120,7 @@ picture {
 }
 
 @media (min-width:1600px){
+
     :root{
         --fs-title-primary:calc(1.3rem + 1vw);
         --fs-desc-primary:1.25rem;
