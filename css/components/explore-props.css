@@ -1,0 +1,254 @@
+
+.explore-props{
+    padding: 3rem 0;
+}
+
+.props{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.explore-props__title{
+    margin-bottom: 0.5rem;
+    font-size:var(--fs-title-primary);
+    font-weight: 700;
+    color: var(--clr-secondary);
+    line-height: 1.3;
+    text-align: center;
+}
+
+.explore-props__desc{
+    padding: 0 0.5rem;
+    font-size: var(--fs-desc-secondary);
+    font-weight: 300;
+    color: var(--clr-secondary);
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    text-align: center;
+}
+
+
+/********************** images sides ************/
+
+.prop--sides{
+    flex: 1;
+    width: 350px;
+    height:250px;
+}
+
+.prop--left{
+    justify-self: flex-start;
+    align-self:flex-start;
+}
+.prop--right{
+    justify-self: flex-end;
+    align-self:flex-end;
+}
+
+
+.prop--sides img{
+    width: inherit;
+    height:inherit;
+}
+
+
+/********************************* slider *****************/
+.prop--slieder__wrapper{
+    flex: 2;
+    position: relative;
+    width:50vw;
+    min-width:350px;
+    aspect-ratio: 1.5 / 1;
+}
+
+
+/******  count ***********/
+
+.prop__count{
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    height:70px;
+    width:70px;
+    text-align: center;
+    color: var(--clr-secondary);
+    background: var(--clr-light-100);
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    box-shadow: -3px 5px 0 2px var(--clr-primary)
+}
+
+.prop__count__title{
+    font-weight: 500;
+    font-size: var(--fs-desc-secondary);
+}
+
+.prop__count__desc{
+    font-size: var(--fs-title-secondary);
+    font-weight: 700;
+}
+
+
+/******  slider ***********/
+
+.prop__slider{
+    position: relative;
+    width:100%;
+    min-width: 350px;
+    height: 100%;
+    background-image: url(../../images/buildings-amenities-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.prop__slider__track {
+    width: 100%;
+    overflow: hidden;
+}
+
+.prop__slider__thumb {
+    width: 1000px;
+    display: flex;
+    gap: 1rem;
+}
+
+.prop__slide{
+    position: absolute;
+    bottom:5%;
+    left:50%;
+    transform: translateX(-50%);
+    width:50vw;
+    min-width: 350px;
+}
+
+.prop__slide__intro{
+    width: 85%;
+    max-height:110px;
+    padding:5px;
+    margin: auto;
+    background: var(--clr-light-100);
+    transform: skewX(-20deg);
+}
+
+.prop__slide__intro > div{
+    transform: skewX(20deg);
+}
+
+/*   navigations */
+
+.prop__navigations {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    min-height: 100px;
+    transform: translateY(-30%);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    z-index: 10;
+} 
+
+.prop__title{
+    margin: .5rem 0;
+    padding: 0 0.5rem;
+    font-size: var(--fs-title-secondary);
+    font-weight: 600;
+    color: var(--clr-secondary);
+    text-align: center;
+}
+
+.prop__desc{
+    padding: 0 0.5rem;
+    font-size: var(--fs-desc-secondary);
+    font-weight: 300;
+    color: var(--clr-secondary);
+    line-height: 1.4;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/**** navigation ****/
+
+.prop__navigation  {
+    height: 40px;
+    width: 40px;
+    padding-top: 3px;
+    border-radius: 50%;
+}  
+
+.prop__navigation.left {
+    color: var(--clr-primary);
+    background: var(--clr-light-100);
+}
+
+.prop__navigation.right {
+    color: var(--clr-light-100);
+    background: var(--clr-primary);
+}
+
+/***************** media ***************/
+
+
+@media (min-width:525px){
+    .prop--left{
+        margin-left:10%;
+    }
+
+    .prop--right{
+        margin-right:10%;
+    }   
+
+}
+
+@media (min-width:767px){
+
+    .props{
+        flex-direction:row;
+        gap: 1vw;
+    }
+
+    .prop--sides{
+        width: 24vw;
+        height: 24vw;
+    } 
+
+    .prop--left{
+        margin-left:0;
+        align-self:unset;
+    }
+
+    .prop--right{
+        margin-right:0;
+        align-self:unset;
+    }
+}
+
+@media (min-width:992px){
+    .prop__count{
+        width:calc(70px + 2vw);
+        height:calc(70px + 2vw);
+    }
+}
+
+
+/* max */
+
+@media (max-width:991px){
+    .prop--slieder__wrapper{
+        --fs-title-secondary : calc(var(--fs-title-secondary) - 5px);
+        --fs-desc-secondary : calc(10px + .1vw);
+    }
+}
