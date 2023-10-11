@@ -1,0 +1,120 @@
+
+.testimonials{
+    padding: 4rem 0 calc(4rem + 125px);
+}
+
+.testimonials__title{
+    margin-bottom:.5rem;
+    font-size: var(--fs-title-primary);
+    font-weight: 700;
+    color: var(--clr-secondary);
+    line-height: 1.3;
+    text-align: center;
+}
+
+.testimonials__slider{
+    position: relative;
+    margin: auto;
+}
+
+.testimonials__slider__track {
+    width: 100%;
+    overflow: hidden;
+}
+
+.frame{
+    width: 100vw;
+    max-width: 800px;
+}
+
+.testimonials__slider__thumb {
+    width: calc(90vw * 3);
+    display: flex;
+}
+
+.testimonial__slide{
+    text-align: center;
+}
+
+.testimonial__desc {
+    line-height: 1.8;
+}
+
+
+.testimonial__profile img{
+    width: calc(30px + 5vw);
+    height: calc(30px + 5vw);
+
+    border-radius: 50%;
+    background: var(--clr-light-15);
+    padding: .5rem;
+}
+
+.testimonial__profile__title{
+    font-size: var(--fs-desc-primary);
+    color: var(--clr-secondary);
+}
+
+.testimonial__profile__desc{
+    font-size: var(--fs-desc-secondary);
+    color: var(--clr-secondary);
+}
+
+/************** navigation ***********/
+
+.testimonials__navigations{
+    position: absolute;
+    top:-120px;
+    left:0;
+    right:0px;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    z-index: 10;
+}
+
+.testimonials__navigation  {
+    height: 40px;
+    width: 40px;
+    padding-top: 3px;
+    border-radius: 50%;
+}
+
+.testimonials__navigation.left {
+    color: var(--clr-primary);
+    background: var(--clr-light-25);
+}
+
+.testimonials__navigation.right {
+    color: var(--clr-light-100);
+    background: var(--clr-primary);
+}
+
+.testimonial__profile{
+    position:absolute;
+    top:100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+
+/********* media **************/
+
+@media (min-width:767px){
+
+    .frame{
+        width: 80vw;
+        max-width: 800px;
+    }
+
+    .testimonials__navigations {
+        position: absolute;
+        top: 50%;
+        left: -70px;
+        right: -70px;
+        transform: translateY(-80%);
+    }
+}
+
