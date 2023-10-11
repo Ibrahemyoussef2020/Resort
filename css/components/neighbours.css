@@ -129,8 +129,7 @@
     }
     .neighbours__container{
         display: flex;
-        max-width:calc(900px + 20vw);
-        min-width: 900px;
+        min-width:100%;
     }
 
     .neighbours__left,
@@ -143,6 +142,5 @@
 
     .neighbours__container{
         display: flex;
-        max-width:calc(1000px + 20vw);
     }
 }
