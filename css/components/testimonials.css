@@ -1,6 +1,6 @@
 
 .testimonials{
-    padding: 4rem 0 calc(4rem + 125px);
+    padding:4rem 0 calc(4rem + 50px);
 }
 
 .testimonials__title{
@@ -64,10 +64,10 @@
 
 .testimonials__navigations{
     position: absolute;
-    top:-120px;
-    left:0;
-    right:0px;
-
+    top: 50%;
+    transform: translateY(-50%);
+    left: -10px;
+    right: -10px;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
@@ -104,6 +104,10 @@
 
 @media (min-width:767px){
 
+    .testimonials{
+        padding:4rem 0 calc(4rem + 100px);
+    }
+
     .frame{
         width: 80vw;
         max-width: 800px;
@@ -115,6 +119,12 @@
         left: -70px;
         right: -70px;
         transform: translateY(-80%);
+    }
+}
+
+@media (min-width:1400px){
+    .testimonials{
+        padding:4rem 0 calc(4rem + 170px);
     }
 }
 

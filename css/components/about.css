@@ -3,7 +3,7 @@
     background:var(--clr-light-25);
 }
 .about__settings{
-    padding:10px 5px;
+    padding:10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
