@@ -4,7 +4,6 @@
 }
 
 .testimonials__title{
-    margin-bottom:.5rem;
     font-size: var(--fs-title-primary);
     font-weight: 700;
     color: var(--clr-secondary);
@@ -40,6 +39,9 @@
     line-height: 1.8;
 }
 
+.testimonial__desc p{
+    padding: 0 10px;
+}
 
 .testimonial__profile img{
     width: calc(30px + 5vw);
@@ -66,8 +68,8 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: -10px;
-    right: -10px;
+    left:0;
+    right:0;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
