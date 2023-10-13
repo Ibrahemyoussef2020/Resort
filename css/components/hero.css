@@ -43,7 +43,7 @@ header{
     gap: .5rem;
 }
 
-.contact-info__right{
+.contact-info__left{
     flex: 1;
     display: flex;
     gap:1rem;
@@ -51,27 +51,27 @@ header{
 
 }
 
-.contact-info__right span{
+.contact-info__left span{
     color:var(--clr-primary);
 }
 
-.contact-info__right a{
+.contact-info__left a{
     font-size: .85rem;
 }
 
-.contact-info__left{
+.contact-info__right{
     flex: 2;
     display: none;
 }
 
 
-.contact-info__left ul{
+.contact-info__right ul{
     justify-content: center;
     align-items: center;
     gap:.5rem;
 }
 
-.contact-info__right ul li{
+.contact-info__left ul li{
     display: flex;
     flex-wrap: wrap;
     gap: .5rem;
@@ -370,7 +370,7 @@ header{
         align-items: center;
     }
 
-    .contact-info__left{
+    .contact-info__right{
         display: block;
     }
 
@@ -390,13 +390,14 @@ header{
 
 @media (min-width:1024px){
     .hero{
-        --hero-height:100vh
+        --hero-height:100vh;
+        font-size: 24px;
     }
 }
 
 @media (min-width:1200px){
 
-    .contact-info__right ul li{
+    .contact-info__left ul li{
         display: flex;
     }
 
@@ -439,14 +440,20 @@ header{
     .hero__intro *:not(.hero__intro__desc){
         font-size:2rem;
     }
+
+    .hero__intro{
+        max-width:1250px;
+    }
+
+    .hero__intro__desc{
+        font-size: 5rem;
+    }
 }
 
 .hero li{
     transition: transform .3s linear;
 }
 
-@media (min-width:2000px){
-    .hero__intro{
-        max-width:950px;
-    }
-}
+
+
+

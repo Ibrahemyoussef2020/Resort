@@ -125,12 +125,9 @@
 }
 
 @media (min-width:1200px){
-    .modern-living{
-        width: 60vw;
-    }
 
     .modern-living__container{
-        margin-left:-35%;
+        margin-left:-25%;
     }
 }
 

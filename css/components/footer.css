@@ -1,0 +1,15 @@
+.main-footer{
+    position: relative;
+    margin-top: -10px;
+    color: var(--clr-light-100);
+    background:#303440;
+    z-index: 2;
+}
+
+.container--main-footer{
+    padding: 1rem 0 1rem 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}

@@ -1,0 +1,212 @@
+
+.dream-home{
+    margin-top:calc(30px + 10vw);
+    background:#181b2a;
+}
+
+.container--dream-home{
+    position: relative;
+}
+
+.dream-home__header{
+   position: absolute;
+    top:0;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    color: var(--clr-light-100);
+    background: var(--clr-primary);
+}
+
+.dream-home__intro__title {
+    margin-bottom:1rem;
+    font-size: var(--fs-title-primary);
+    color: var(--clr-light-100);
+}
+
+.dream-home__intro__desc {
+    font-weight: 500;
+    color: var(--clr-light-100);
+}
+
+.explore-props{
+    padding: 1rem;
+    border-radius:.5rem;
+    color: var(--clr-primary);
+    background: var(--clr-light-100);
+}
+
+/*************** body **********/
+
+.dream-home__body{
+    padding: 7rem 0 3rem ;
+    color: var(--clr-light-100);
+    background:#181b2a;
+}
+
+.dream-home__body ul{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:1.2rem;
+    font-size:var(--fs-title-primary);
+    min-width: 200px;
+    padding-left: 1rem;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+}
+
+.dream-home__body ul.small{
+    text-align: center;
+}
+
+.dream-home__body .heading{
+    font-weight: 700;
+    margin-bottom:.5rem;
+}
+
+/******** about *********/
+
+
+
+.dreem-home__about-list .socials {
+    padding: .5rem 0;
+    display: flex;
+    gap:1rem;
+}
+
+.dreem-home__about-list .social{
+    display: inline-block;
+    height:calc(25px + 2vw);
+    width:calc(25px + 2vw);
+    font-size: clamp(1.2rem , 4vw , 1.8rem);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color:var(--clr-secondary);
+    background:var(--clr-light-100);
+}
+
+.dreem-home__about-list .social.active{
+    color: var(--clr-light-100);
+    background: var(--clr-primary);
+}
+
+
+/*  dreem-home__curesity */
+
+.dreem-home__curesity-list li{
+    display: flex;
+    align-items: baseline;
+    gap: .5rem;
+}
+
+.dreem-home__curesity-list .heading i{
+    font-size: 2rem;
+    color: var(--clr-primary);
+}
+
+
+.dreem-home__curesity-list form{
+    position: relative;
+    height:60px;
+    width: 100%;
+    max-width: 500px;
+    padding: 5px;
+    color: var(--clr-secondary);
+    background: var(--clr-light-100);
+}
+
+.dreem-home__curesity-list input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding-right:50%;
+    z-index: 0;
+    outline: none;
+    border: none;
+}
+
+.dreem-home__curesity-list button{
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    width:40%;
+    min-width: 150px;
+    z-index: 0;
+    font-size: var(--fs-desc-secondary);
+    color: var(--clr-light-100);
+    background: var(--clr-primary);
+
+    outline: none;
+    border: none;
+}
+
+/*********** media ********/
+
+
+@media (max-width:567px){
+    
+    .dream-home__body ul li{
+        text-align: center;
+    }
+
+    .dream-home__body ul li{
+        justify-content: center;
+    }
+}
+
+@media (min-width:567px){
+
+    .dream-home__header{
+        flex-direction: row;
+    }
+    .dream-home__body{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap:4rem 1.5rem;
+    }
+
+    .dream-home__body ul{
+        font-size: var(--fs-desc-primary);
+        min-width: 120px;
+        max-width: fit-content;
+        margin-bottom:0;
+    }
+
+    ul.dreem-home__about-list{
+        min-width: 300px;
+        max-width:fit-content;
+    }
+
+    ul.dreem-home__curesity-list{
+        min-width: 320px;
+        max-width:400px;
+        gap: 2rem;
+    }
+
+    .dreem-home__curesity-list form{
+        margin: 0;
+    }
+}
+
+
+@media (min-width:1600px){
+
+    .dreem-home__about-list .social i{
+        font-size: 1.8rem;
+    }
+}
