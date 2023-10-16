@@ -1,11 +1,12 @@
 :root{
 
---fs-title-primary:calc(1.1rem + 1vw);
---fs-title-secondary:1.2rem;
---fs-desc-primary:1.12rem;
---fs-desc-secondary:1rem;
+--fs-title-primary:1.3rem;
+--fs-title-secondary:1.1rem;
+--fs-desc-primary:1rem;
+--fs-desc-secondary:.75rem;
+--fs-small:.75rem;
 
---clr-primary:orange;
+--clr-primary:#f58725;
 --clr-primary-light:#ffa50038;
 --clr-secondary:#24333a;
 
@@ -26,7 +27,6 @@
 body{
     font-family: 'Poppins', sans-serif;
     font-size: var(--fs-desc-primary);
-    overflow-x: hidden;
 }
 
 /********************** reset *********************/
@@ -64,6 +64,12 @@ picture {
 
 /******************* components ****************/
 
+.btn-primary:hover{
+    color: var(--clr-primary);
+    background:var(--clr-light-100) !important;
+    outline: 3px solid var(--clr-primary);
+}
+
 .container{
     padding-left: 5px;
     padding-right: 5px;
@@ -71,100 +77,52 @@ picture {
     margin-right: auto;
 }
 
-.left-container{
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-right: auto;
-}
-
-.right-container{
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-left: auto;
-}
 
 @media (min-width:767px){
-    .left-container{
-        margin-left: 25px;
+    .container , .frame{
+        width: 717px;
+        padding-left:0;
+        padding-right:0;
     }
-    .right-container{
-        margin-right: 25px;
-    }
+
 }
 
 @media (min-width:992px){
     
-    .container{
-        width: calc(100% - 50px);
+    .container , .frame{
+        width: 900px;
     }
-
-    .left-container{
-        margin-left: 50px;
-    }
-    .right-container{
-        margin-right: 50px;
-    }
+      
 }
 
-@media (min-width:1400px){
-    .container{
-        width: calc(100% - 100px);
+@media (min-width:1200px){
+    :root{
+        --fs-title-primary:2rem;
+        --fs-title-secondary:1.2rem;
+        --fs-desc-primary:1.12rem;
+        --fs-desc-secondary:1rem;
+        --fs-small:.75rem;
+    }
+    .container,.frame{
+        width: 1000px
     }
 
-    .left-container{
-        margin-left: 75px;
-    }
-    .right-container{
-        margin-right: 75px;
-    }
 }
+
+
 
 @media (min-width:1600px){
 
     :root{
-        --fs-title-primary:calc(1.3rem + 1vw);
-        --fs-desc-primary:1.25rem;
-        --fs-desc-secondary:1.12rem;
-    }
-    .container{
-        width: calc(100% - 150px);
+        --fs-title-primary:2.3rem;
+        --fs-title-secondary:1.5rem;
+        --fs-desc-primary:1.2rem;
+        --fs-desc-secondary:1.1rem;
+        --fs-small:1rem;
     }
 
-    .left-container{
-        margin-left:75px;
-    }
-    .right-container{
-        margin-right:75px;
-    }
+    .container,.frame{
+        width: 1200px
+    }    
 }
 
-@media (min-width:1800px){
-    .container{
-        width: calc(100% - 200px);
-    }
-
-    .left-container{
-        margin-left: 100px;
-    }
-    .right-container{
-        margin-right: 100px;
-    }
-}
-
-@media (min-width:2000px){
-    :root{
-        --fs-title-primary:calc(1.5rem + 1vw);
-        --fs-desc-primary:1.50rem;
-        --fs-desc-secondary:1.25rem;
-    }
-    .container{
-        width: calc(100% - 250px);
-    }
-
-    .left-container{
-        margin-left: 125px;
-    }
-    .right-container{
-        margin-right: 125px;
-    }
-}

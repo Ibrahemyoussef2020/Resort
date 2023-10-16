@@ -57,7 +57,7 @@
 }
 
 .buildings-amenities__sliders__thumb{
-    width:1000px;
+    width:3000px;
     display: flex;
     gap:1rem;
 }
@@ -67,6 +67,8 @@
     min-width:230px;
     max-width:230px;
     height: 180px;
+    border-radius: 4px;
+    overflow: hidden;
 }
 
 .buildings-amenities__slider img{
@@ -94,14 +96,11 @@
     width: 40px;
     padding-top: 5px;
     border-radius: 50%;
-}
-
-.buildings-amenities__navigation.left{
     color: var(--clr-primary);
     background: var(--clr-light-100);
 }
 
-.buildings-amenities__navigation.right{
+.buildings-amenities__navigation:hover{
     color: var(--clr-light-100);
     background: var(--clr-primary);
 }
@@ -135,15 +134,27 @@
     -webkit-aspect-ratio: 1 / 1;
     -moz-aspect-ratio: 1 / 1;
     -o-aspect-ratio: 1 / 1;
+    overflow: hidden;
 }
 
 .buildings-amenities__image img{
     width:100%;
     height:100%;
+    height: 100%;
+    border-radius: 5px;
+
 }
 
 .buildings-amenities__image.relative{
     position: relative;
+}
+
+.buildings-amenities__image img{
+    transition: transform .3s linear ;
+}
+
+.buildings-amenities__image:hover img{
+    transform: scale(1.1);
 }
 
 .buildings-amenities__text{
@@ -195,20 +206,20 @@
     }
 
     .buildings-amenities__costum-container{
-        max-width:calc(200px * 2 + 1rem);
-        min-width:calc(200px * 2 + 1rem);
+        max-width:calc(250px * 2 + 1rem);
+        min-width:calc(250px * 2 + 1rem);
     }
 
     .buildings-amenities__slider {
         flex: 1;
-        min-width: 200px;
-        max-width: 200px;
-        height: 150px;
+        min-width: 250px;
+        max-width: 250px;
+        height: 170px;
     }
 
     .buildings-amenities__navigations{
-        left: -70px;
-        right: -70px;
+        left: 0;
+        right: 0;
     }
 
     .buildings-amenities__images{
@@ -259,7 +270,7 @@
 @media (min-width:767px){
 
     .buildings-amenities__costum-container{
-        max-width:calc(200px * 3 + 2rem);
+        max-width:calc(250px * 3 + 2rem);
     }
 
     .container--images{
@@ -280,6 +291,6 @@
 
 @media (min-width:992px){
     .buildings-amenities__costum-container{
-        max-width:calc(200px * 4 + 3rem)
+        max-width:calc(250px * 4 + 3rem)
     }
 }

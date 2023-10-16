@@ -9,34 +9,55 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    row-gap: 3rem;
+    gap:3rem 1rem;
     text-align: center;
     padding: 1rem 0;
 }
 
 .feature {
+    position: relative;
     flex: 1;
-    min-width: 175px;
+    min-width: 125px;
     max-width: 250px;
     height: 250px;
     padding: 2rem 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.feature:not(.feature:nth-child(2)){
     border: 7px solid #fff;
+    cursor: pointer;
+    transition: all .2s linear;
 }
 
-.feature:nth-child(2){
-    transform: scale(1.1);
-    background:var(--clr-light-100);
-    box-shadow: 0 0 5px 5px #ddd;
+.feature::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left:0px;
+    transform: translateY(-50%);
+    height: 20%;
+    width: 5px;
+    background: var(--clr-primary);
+    transition:all 1s linear;
+    display:none;
 }
+
+.feature::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 20%;
+    width: 5px;
+    background: var(--clr-primary);
+    transition:all 1s linear;
+    display:none;
+}
+
 
 .features i {
-    font-size: 4rem;
+    font-size:3rem;
     color:#ffa500ab;
 }
 
@@ -44,12 +65,12 @@
     display: block;
     margin:2.9rem 0 .5rem;
     text-align: center;
-    font-size:2.5rem;
+    font-size:2rem;
     font-weight: 600;
     color: var(--clr-secondary);
 }
 
-.feature:nth-of-type(2) span{
+.feature span{
     margin:1.5rem 0 .5rem;
 }
 
@@ -61,16 +82,36 @@
     align-items: center;
     justify-content: center;
 
-    transform: rotatez(130deg);
-    border: 1px solid orange ;
+    transform: rotatez(132deg);
+    border: 1px solid transparent ;
     margin: auto;
+    transition: border .3s linear;
 }
 
 .feature .icon-container i {
-    transform: rotatez(-130deg);
+    transform: rotatez(-132deg);
 }
 
 .features h3{
-    font-size: var(--fs-desc-primary);
+    font-size: var(--fs-desc-secondary);
     color: var(--clr-secondary);
+}
+
+/* hovers */
+
+.feature:hover{
+    background:var(--clr-light-100);
+    box-shadow: 0 0 5px 5px #ddd;
+}
+
+.feature:hover::before{
+    display:inline-block;
+}
+
+.feature:hover::after{
+    display:inline-block;
+}
+
+.feature:hover .icon-container{
+    border: 1px solid orange ;
 }

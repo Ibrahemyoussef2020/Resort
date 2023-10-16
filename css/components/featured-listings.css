@@ -5,7 +5,7 @@
 .container--featured-listings{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 3rem 1rem;
     background: var(--clr-light-15);
 }
@@ -30,7 +30,7 @@
 
 .featured-listing{
     flex: 1;
-    min-width: 340px; 
+    min-width:250px; 
     max-width: 600px;
     outline: 1rem solid var(--clr-light-25);
     background: var(--clr-light-100);
@@ -51,6 +51,7 @@
     background-image: url(../../images/features-1.jpg);
     background-size: cover;
     background-position: center;
+    border-radius: 0.5rem;
 }
 
 .featured-listing:nth-child(2) .featured-listing__hero{
@@ -100,7 +101,7 @@
 }
 
 .featured-listing-item__footer__desc span{
-    font-size: var(--fs-desc-secondary);
+    font-size:12px;
 }
 
 .footer__details{

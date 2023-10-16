@@ -34,9 +34,20 @@
 
 .prop--sides{
     flex: 1;
-    width: 350px;
+    width: 330px;
     height:250px;
+    border-radius: 0.5rem;
+    overflow: hidden;
 }
+
+.prop--sides img{
+    transition: transform .3s linear ;
+}
+
+.prop--sides:hover img{
+    transform: scale(1.1);
+}
+
 
 .prop--left{
     justify-self: flex-start;
@@ -106,6 +117,8 @@
     background-image: url(../../images/buildings-amenities-1.jpg);
     background-size: cover;
     background-position: center;
+    border-radius: 0.5rem;
+    overflow: hidden;
 }
 
 .prop__slider__track {
@@ -187,14 +200,11 @@
     width: 40px;
     padding-top: 3px;
     border-radius: 50%;
-}  
-
-.prop__navigation.left {
     color: var(--clr-primary);
     background: var(--clr-light-100);
-}
+}  
 
-.prop__navigation.right {
+.prop__navigation:hover {
     color: var(--clr-light-100);
     background: var(--clr-primary);
 }

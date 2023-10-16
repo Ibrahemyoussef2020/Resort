@@ -116,7 +116,7 @@
                         <i class="fa-regular fa-user"></i>
                     </button>
     
-                    <button>
+                    <button class="btn-primary">
                         ADD LISTING
                     </button>
                 </div>
@@ -239,7 +239,7 @@
                 <i class="fa-solid fa-bars"></i>
             </button>
     
-            <button type="submit" disabled class="about__confirm-settings">
+            <button type="submit" disabled class="about__confirm-settings btn-primary">
                 Find Now
             </button>
         </form>
@@ -291,11 +291,9 @@
                     </div>
                 </div>
                 <blockqoute class="about__blockqoute">
-                    <sup><i class="fa-solid fa-quote-left"></i></sup>
                     Enimad minimum veniam Lorem ipsum dolor sit, amet consectetur adipisicing elit
-                    <sup><i class="fa-solid fa-quote-right"></i></sup>
                 </blockqoute>
-                <button class="about__contact">Contact Us Now</button>
+                <button class="about__contact btn-primary">Contact Us Now</button>
             </div>
         </div>
     </div>
@@ -304,7 +302,9 @@
 <section class="features">
     <div class="container container--features">
         <article class="feature">
-            <i class="fa-regular fa-note-sticky"></i>
+            <div class="icon-container">
+                <i class="fa-regular fa-note-sticky"></i>
+            </div>
             <span>560</span>
             <h3>
                  Area Sq
@@ -320,7 +320,9 @@
             </h3>
         </article>
         <article class="feature">
-            <i class="fa-solid fa-tractor"></i>
+            <div class="icon-container">
+                <i class="fa-solid fa-tractor"></i>
+            </div>
             <span>560</span>
             <h3>
                  Constructions
@@ -328,7 +330,9 @@
         </article>
 
         <article class="feature">
-            <i class="fa-solid fa-couch"></i>
+            <div class="icon-container">
+                <i class="fa-solid fa-couch"></i>
+            </div>
             <span>340</span>
             <h3>
                 Apartio Rooms
@@ -394,9 +398,9 @@
                                 <span class="bottom">Head Corner</span>
                             </div>
                             <div>
-                                <span>3450</span>
+                                <span>501</span>
                                 <i class="fa-regular fa-paste fa-lg"></i>
-                                <span class="bottom">Square Ft</span>
+                                <span class="bottom">Square</span>
                             </div>
                         </div>
                     </div>
@@ -474,9 +478,9 @@
                                 <span class="bottom">Head Corner</span>
                             </div>
                             <div>
-                                <span>3450</span>
+                                <span>450</span>
                                 <i class="fa-regular fa-paste fa-lg"></i>
-                                <span class="bottom">Square Ft</span>
+                                <span class="bottom">Square</span>
                             </div>
                         </div>
                     </div>
@@ -555,9 +559,9 @@
                                 <span class="bottom">Head Corner</span>
                             </div>
                             <div>
-                                <span>3450</span>
+                                <span>345</span>
                                 <i class="fa-regular fa-paste fa-lg"></i>
-                                <span class="bottom">Square Ft</span>
+                                <span class="bottom">Square</span>
                             </div>
                         </div>
                     </div>
@@ -586,7 +590,7 @@
 </section>
 
 <section class="today-sells">
-    <div class="left-container today-sells__left-container">
+    <div class="container today-sells__container">
         <div class="today-sells__text">
             <h2 class="text__title">Today Sells Properties</h2>
             <p class="text__subtitle">
@@ -777,7 +781,7 @@
                          <span class="buildings-amenities__text__desc">Creat In 2002</span>
                      </div>
 
-                     <button class="buildings-amenities__text__plus">
+                     <button class="buildings-amenities__text__plus btn-primary">
                          <i class="fa-solid fa-plus neighbour__details__toggle"></i>
                      </button>
                      
@@ -855,7 +859,7 @@
 </section>
 
 <section class="next-level">
-    <div class="right-container right-container--next-level">
+    <div class="container container--next-level">
         <div class="next-level__left">
             <div class="next-level__images">
                 <img class="next-level__image next-level__image-1" src="./images/intereducing-1.jpg" alt="intereducing-1">
@@ -1161,49 +1165,51 @@
 </section>
 
 <section class="contact">
-    <div class="container container--contact">
-        <div class="contact__details">
-            <h2 class="contact__details__title">
-                Request For More Information
-            </h2>
-            <p class="contact__details__desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aliquam, dolorem quod ipsum accusamus ab excepturi? Excepturi amet.
-            </p>
-            <div class="contact__profile">
-                <img src="./images/person-3.jpg" alt="person 1">
-                <div class="contact__profile__details">
-                    <h3 class="contact__profile__details__title">
-                        Fredrek Aeo
-                    </h3>
-                    <p class="contact__profile__details__desc">
-                        HR Maneger
-                    </p>
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-location-dot"></i>
-                            <span>Need Information</span>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-location-dot"></i>
-                            <span>Need Help</span>
-                        </li>
-                    </ul>
+    <div class="contact__layout">
+        <div class="container container--contact">
+            <div class="contact__details">
+                <h2 class="contact__details__title">
+                    Request For More Information
+                </h2>
+                <p class="contact__details__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aliquam, dolorem quod ipsum accusamus ab excepturi? Excepturi amet.
+                </p>
+                <div class="contact__profile">
+                    <img src="./images/person-3.jpg" alt="person 1">
+                    <div class="contact__profile__details">
+                        <h3 class="contact__profile__details__title">
+                            Fredrek Aeo
+                        </h3>
+                        <p class="contact__profile__details__desc">
+                            HR Maneger
+                        </p>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Need Information</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Need Help</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+            <form class="contact__form">
+                <fieldset>
+                    <input type="text" name="adress" id="adress" placeholder="Enter Your Adress">
+                    <input type="text" name="phone" id="phone" placeholder="Enter Your Phone">
+                </fieldset>
+                <fieldset>
+                    <input type="text"  name="email" id="email" placeholder="Enter Your Email Adress">
+                </fieldset>
+                <fieldset>
+                    <textarea name="msg" placeholder="Enter Your Message"></textarea>
+                </fieldset>
+                <button type="submit" class="btn-primary" disabled>Enter Request</button>
+            </form>
         </div>
-        <form class="contact__form">
-            <fieldset>
-                <input type="text" name="adress" id="adress" placeholder="Enter Your Adress">
-                <input type="text" name="phone" id="phone" placeholder="Enter Your Phone">
-            </fieldset>
-            <fieldset>
-                <input type="text"  name="email" id="email" placeholder="Enter Your Email Adress">
-            </fieldset>
-            <fieldset>
-                <textarea name="msg" placeholder="Enter Your Message"></textarea>
-            </fieldset>
-            <button type="submit" disabled>Enter Request</button>
-        </form>
     </div>
 </section>
 
@@ -1230,7 +1236,7 @@
                         </li>
                     </ul>
                     <h3 class="blog__title">Our Buildings</h3>
-                    <p class="blog__desc">We have Beautiful Buildings</p>
+                    <p class="blog__desc">Have a Beautiful Buildings</p>
                 </div>
             </article>
             <article class="blog">
@@ -1247,7 +1253,7 @@
                         </li>
                     </ul>
                     <h3 class="blog__title">Our Utilities</h3>
-                    <p class="blog__desc">We have Beautiful Utilities</p>
+                    <p class="blog__desc">Have a Beautiful Utilities</p>
                 </div>
             </article>
             <article class="blog">
@@ -1264,7 +1270,7 @@
                         </li>
                     </ul>
                     <h3 class="blog__title">Our Buildings</h3>
-                    <p class="blog__desc">We have Beautiful Buildings</p>
+                    <p class="blog__desc">Have a Beautiful Buildings</p>
                 </div>
             </article>
         </div>
@@ -1385,7 +1391,7 @@
                 <li>
                     <form class="email">
                         <input type="text">
-                        <button disabled>Enter Your Email</button>
+                        <button disabled class="btn-primary">Enter Your Email</button>
                     </form>
                 </li>
             </ul>

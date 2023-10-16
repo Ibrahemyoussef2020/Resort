@@ -42,12 +42,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
-
-.softwere-solution.white{
     background: var(--clr-light-25);
 }
-.softwere-solution.orange{
+
+.softwere-solution , .softwere-solution *{
+    transition: all .3s linear;
+}
+
+.softwere-solution:hover{
     background: var(--clr-primary);
 }
 
@@ -60,12 +62,10 @@
     align-items: center;
     border-radius: 50%;
     margin-bottom: 1.5rem;
-}
-
-.softwere-solution.white .softwere-solution__icon{
     background: var(--clr-primary-light);
 }
-.softwere-solution.orange .softwere-solution__icon{
+
+.softwere-solution:hover .softwere-solution__icon{
     background: var(--clr-light-100);
 }
 
@@ -76,13 +76,11 @@
 
 .softwere-solution__title{
     font-size:var(--fs-title-primary);
-    margin-bottom:.5rem ;
-}
-
-.white .softwere-solution__title{
+    margin-bottom:.5rem ; 
     color: var(--clr-secondary);
 }
-.orange .softwere-solution__title{
+
+.softwere-solution:hover .softwere-solution__title{
     color: var(--clr-light-100);
 }
 
@@ -90,12 +88,10 @@
     font-size:calc(var(--fs-desc-primary) + .5vw);
     margin-bottom: 1rem;
     line-height: 1.9;
-}
-
-.white .softwere-solution__desc{
     color: var(--clr-secondary);
 }
-.orange .softwere-solution__desc{
+
+.softwere-solution:hover .softwere-solution__desc{
     color: var(--clr-light-100);
 }
 
@@ -108,13 +104,12 @@
     display: flex;
     align-items: center;
     border-radius: 30px;
-}
-
-.white .softwere-solution__toggle{
     color: var(--clr-light-100);
     background: var(--clr-primary);
+    cursor: pointer;
 }
-.orange .softwere-solution__toggle{
+
+.softwere-solution:hover .softwere-solution__toggle{
     color: var(--clr-primary);
     background: var(--clr-light-100);
 }
@@ -132,13 +127,11 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-}
-
-.white .softwere-solution__toggle .circle{
     color: var(--clr-primary);
     background: var(--clr-light-100);
 }
-.orange .softwere-solution__toggle .circle{
+
+.softwere-solution:hover .softwere-solution__toggle .circle{
     color: var(--clr-light-100);
     background: var(--clr-primary);
 }

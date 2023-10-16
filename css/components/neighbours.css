@@ -93,7 +93,7 @@
 .neighbour__details__title{
     flex: 1;
     padding: 0.5rem 0 1.5rem 0;
-    font-size: var(--fs-title-primary);
+    font-size: var(--fs-title-secondary);
     font-weight: 600;
     color: var(--clr-secondary);
     margin-bottom: 0.5rem;
